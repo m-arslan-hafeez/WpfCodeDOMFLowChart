@@ -1,0 +1,12 @@
+﻿<Window x:Class="WpfCodeDOMFLowChart.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="WpfCodeDOMFlowChart" Width="800" Height="600" MouseLeftButtonDown="OnCanvasClick">
+    <Grid>
+        <Canvas x:Name="mainCanvas">
+            <!-- Flow chart will appear in this convas -->
+            <Button Content="Delete Last Node" Click="OnDeleteButtonClick" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10"/>
+        </Canvas>
+        <Path x:Name="connectionPath" Stroke="Black" StrokeThickness="2" />
+    </Grid>
+</Window>
